@@ -1,0 +1,13 @@
+This
+is a test 
+input file
+for 
+exercise 1.8.4
+
+and these are
+some test lines.
+
+and more lines
+,
+and more and more.
+
