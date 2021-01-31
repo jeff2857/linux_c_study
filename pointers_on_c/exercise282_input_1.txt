@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int ch;
+    int braces = 0;
+
+    while ((ch = getchar()) != EOF) {
+        if (ch == '{') {
+            braces++;
+        } else if (ch == '}') {
+            braces--;
+        }
+    }
+
+    if (braces == 0) {
+        printf("success: braces pair.\n");
+        return 0;
+    } else {
+        printf("failure: braces unpair.\n");
+        return 0;
+    }
+}
