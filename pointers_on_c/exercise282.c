@@ -19,6 +19,11 @@ int main() {
         if (ch == '{') {
             braces++;
         } else if (ch == '}') {
+            // 判断 "}{" 这样的情况
+            if (braces == 0) {
+                printf("failure: braces unpair.\n");
+                return 0;
+            }
             braces--;
         }
     }
